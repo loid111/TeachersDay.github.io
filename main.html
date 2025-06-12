@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>วันไหว้ครู2568</title>
+
+  
+  <link rel="icon" href="favicon.png" type="image/png" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Sriracha', cursive;
+      background: linear-gradient(135deg, #fff8f0, #ffd6d6);
+      color: #224ec7;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background: #ffebe8;
+      box-shadow: 0 4px 15px rgba(255,100,100,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: 2px 2px 4px #ffa6a6;
+    }
+
+    header p {
+      margin: 0.3rem 0 0;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav button {
+      background: #f387d3;
+      border: none;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 8px 16px;
+      margin: 0 0.3rem;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 100, 100, 0.5);
+      transition: background 0.3s ease;
+    }
+
+    nav button:hover {
+      background: #ff4444;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .model-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    model-viewer {
+      width: 100%;
+      max-width: 600px;
+      height: 600px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(255, 100, 100, 0.6);
+      background: white;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .model-hint {
+      margin-top: 12px;
+      font-size: 1.2rem;
+      color: #b33a3a;
+      font-weight: 700;
+      font-style: italic;
+      text-shadow: 1px 1px 3px #ff9999;
+    }
+
+    .content {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 30px;
+      box-shadow: 0 6px 20px rgba(255, 90, 90, 0.3);
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .music-box {
+      background: white;
+      max-width: 400px;
+      margin: 3rem auto 5rem auto;
+      padding: 20px 30px;
+      border-radius: 25px;
+      box-shadow: 0 6px 20px rgba(255, 90, 90, 0.4);
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      margin: 3rem 0 2rem;
+      font-size: 1rem;
+      color: #aa5555;
+      font-style: italic;
+      opacity: 0.7;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .flower-fall {
+      position: fixed;
+      top: -50px;
+      pointer-events: none;
+      animation-name: fall;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      user-select: none;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(360deg);
+      }
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .content {
+        font-size: 1.2rem;
+        padding: 20px 20px;
+      }
+      model-viewer {
+        height: 350px;
+      }
+      nav button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+        margin: 0 0.2rem;
+      }
+      .model-hint {
+        font-size: 1rem;
+      }
+      .music-box {
+        max-width: 90%;
+        padding: 15px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>กราบขอบพระคุณอาจารย์</h1>
+    <p>อาจารย์ศักดิ์ชัย ชื่นเจริญ &nbsp;&nbsp;&nbsp; อาจารย์สุภัทรา</p>
+    <nav>
+      <button id="ownerWorksBtn" onclick="location.href='works.html'">ผลงานเจ้าของเว็บ</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="model-container">
+      <model-viewer 
+        src="garland.glb" 
+        alt="โมเดลพวงมาลัย 3D" 
+        auto-rotate 
+        camera-controls 
+        shadow-intensity="1" 
+        interaction-prompt="หมุนโมเดลด้วยเมาส์"
+        style="width: 100%; max-width: 600px; height: 600px;">
+      </model-viewer>
+
+      <div class="model-hint">* โมเดลสามารถขยับได้ด้วยเมาส์ *</div>
+      <div class="model-hint">ขอมอบพวงมาลัยให้อาจารย์ทั้งสองท่าน</div>
+    </div>
+
+    <div class="content" id="mainContent">
+      <p>ขอขอบพระคุณอาจารย์ที่มอบความรู้และความรักให้กับพวกเราตลอดมา</p>
+      <p>ขอให้อาจารย์มีความสุข สุขภาพแข็งแรง และประสบความสำเร็จในทุกๆ ด้านค่ะ/ครับ</p>
+    </div>
+
+    <div class="music-box">
+      <h2>พระคุณที่สาม</h2>
+      <audio id="music" src="music/song.mp3" autoplay loop controls style="width: 100%; outline:none;"></audio>
+    </div>
+  </main>
+
+  <footer>
+    MADE BY M4/4
+  </footer>
+
+  <script>
+    function sayThankYou() {
+      if ('speechSynthesis' in window) {
+        const utter = new SpeechSynthesisUtterance('สวัสดีครับอาจารย์ทั้งสองท่าน');
+        utter.lang = 'th-TH';
+        utter.rate = 1.0;
+        speechSynthesis.speak(utter);
+      }
+    }
+
+    window.addEventListener('load', () => {
+      sayThankYou();
+      const music = document.getElementById('music');
+      music.volume = 0.3;  
+    });
+
+    function createFlower() {
+      const flower = document.createElement('div');
+      flower.className = 'flower-fall';
+      flower.style.left = Math.random() * 100 + 'vw';
+      flower.style.animationDuration = (5 + Math.random() * 5) + 's';
+      flower.style.fontSize = (20 + Math.random() * 15) + 'px';
+      flower.style.color = 'pink';
+      flower.style.userSelect = 'none';
+      flower.textContent = '❀';
+      document.body.appendChild(flower);
+      setTimeout(() => flower.remove(), 10000);
+    }
+
+    setInterval(createFlower, 500);
+  </script>
+</body>
+</html>
